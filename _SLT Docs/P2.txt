@@ -1,0 +1,26 @@
+https://confluence.hargreaveslansdown.co.uk/display/SERVD/Leaver+Procedure
+
+Morning Checks - Please ensure that the Leaver Procedure is consulted as it has been updated
+
+Complete following user's last day (Mark when DONE in BOLD TYPEFACE):
+
+Run the File Explorer as admin and run the Powershell script (batch file) here: T:\IT LIBRARY\Infrastructure\Service Desk\Team Tools\Powershell Scripts\LeaverMorningChecks
+
+1) Disable AD account
+2) Disable Origo Account
+3) Disable Altus Account (ATG/APG)
+4) Delete Equifax Account
+5) Check the Banking Users Lists for the user and if the users appears in any banking list then please raise a PI to Banking to get the access removed. https://confluence.hargreaveslansdown.co.uk/pages/viewpage.action?pageId=750683847
+6) Exchange:
+                  Hide from Exchange
+                  Exchange Online Command: Get-Mailbox -ResultSize Unlimited | Get-MailboxPermission -User James.Luxmore@hl.co.uk -ErrorAction SilentlyContinue  | ft -autosize
+                  Exchange Powershell On-Prem: get-mailbox -resultsize unlimited | Get-MailboxPermission -User First.Last@hl.co.uk -ErrorAction SilentlyContinue | select identity | ft -autosize
+7) Remove from any Distribution Lists
+8) Remove all ATLAS AD groups
+9) Remove all OnBase AD groups (ECM and AX and WX groups)
+10) Remove 'zoom users' to recover pro licenses
+11) Remove all O365 AD groups
+12) Disable RecApp access and remove User group(s)
+13) Check Internal Client View Access and disable AFTER the users leave date if a Helpdesk Online Support Leaver (Option 5 in BF)
+14) If an IT Operations user, raise a REQ to Windows to delete the Azure AD admin account & REQ to Unix for deletion of any additional access provisioned by them
+15) Change the State to 'Work In Progress', Add P3 into the External Ref field

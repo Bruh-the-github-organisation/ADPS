@@ -1,0 +1,85 @@
+When processing Leaver:
+
+
+
+MARK AS DONE (in Bold typeface) when complete
+
+
+
+Please ensure you have checked Confluence for updates: https://confluence.hargreaveslansdown.co.uk/display/SERVD/Leaver+Procedure
+
+
+
+1) Delete P&S drives
+2) Raise a REQ to Windows Support for removal of data from the leavers P & S sync folders - Please delete their data from: \\hlds\data\userfolders\username
+3) Spidermail account set to inactive and mark as permanent leaver
+4) Disable BF acct and remove from BF user group
+5) Remove Unix login
+6) Check for HL Gas, qa.hlgas and dev.hlgas accts and disable
+7) Disable CREST
+8) Disable CRESTBridge
+9) Deactivate Topdesk Operator and Archive Operator (usually IT or Marketing Users)
+10) Delete all copies of the users photo from \\hlds\data\user\Shared\Staff Photo Directory & \\vmtopdesk01\StaffImages$
+11) Falcon users- if user is in Falcon.IO Users - Ask Sam Cogan to remove them from the Falcon.IO site.
+12) INVISION - https://hargreaveslansdown.invisionapp.com/d/main#/company/members - revoke invision license
+13) MIRO - If user appears in Miro, please assign a PI to Dino Murray to remove Miro license
+14) Twilio - If user appears in Twilio Users please remove the license from the user within https://www.twilio.com/login
+15) Brightedge - If user appears in Brightedge please delete the user within https://app5.brightedge.com/ui/platform-r/home/
+16) Business Optix - An email needs to be sent to Rebecca Packwood or Michael Gilding
+
+
+
+17) Delete Active Directory account 2 weeks after leave date
+
+
+
+Check the following portals and release the licenses if applicable (See Keepass):
+DEVs/UNIX/Etc
+
+
+
+1) Pluralsight
+2) https://cs.visual-paradigm.com - Visual Paradigm
+3) https://account.jetbrains.com - IntelliJ IDEA / PHPStorm / ReSharper
+4) Adobe License - https://creative.adobe.com/team/admin - Adobe Creative Cloud / Adobe InDesign / Adobe Photoshop CC
+5) Gitlab license
+6) Check AEM/AMS access and email per the confluence guide instructions https://confluence.hargreaveslansdown.co.uk/pages/viewpage.action?pageId=597164067
+
+
+
+
+If Leaver is a Developer (HL/Web M/FL/Savings):
+1) Raise a REQ to Unix to delete their LDAP account
+(To check, Putty Brokerfocus and run ' getent passwd username ')
+
+
+
+Ensure the user is not in any of these AD groups before passing a call to Unix-Support re LDAP Account
+
+
+
+_Application Support
+_Back Office
+_Business Intelligence
+_Capacity Team
+_Database Team
+_Front Office Development
+_INFOSECURITY
+_IT Architecture
+_ServiceDesk
+_Unix Pentesters
+_Unix Team
+_Web_Development
+_Windows Support
+BEI Development
+Brokerfocus Dev Access
+HL Savings Dev Access
+HL Tech Development UNIX Access
+HL Tech Tester UNIX Access
+IT Quality
+SOC Team
+Spidermail Users
+Sybase
+Syslog Access HL
+VMWARE_Networks_Admins
+Windows Infrastructure

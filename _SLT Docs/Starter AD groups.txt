@@ -1,0 +1,10 @@
+Domain Users
+Proxy Websense Users
+Self Service Password Reset
+MetaCompliance Users
+Remote Access Users
+Zoom Basic Users
+
+ADD AFTER MAILBOX CREATION:
+
+O365_AllUsers

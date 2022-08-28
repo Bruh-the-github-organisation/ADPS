@@ -1,0 +1,5 @@
+1)Amend Short Description to 'Leaver: Name - DD.MM.YY'
+2) Set AD account to expire at the end of their last working day
+3) Add user to 'Monitored Individuals' AD Group
+4) Add TRIAGED into the External Ref Field
+5) Amend Due Date to be the day of their LEAVE DATE

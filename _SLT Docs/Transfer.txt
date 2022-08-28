@@ -1,0 +1,87 @@
+Prep the transfer:
+
+OU Change:
+From:
+To:
+
+Laptop OU Change:
+From:
+To:
+
+P & S Drive Change (re-permission the S drive):
+From:
+
+To:
+
+To remove from the Org Tab:
+
+
+To add to the Org tab:
+
+
+To remove from the Member of tab:
+
+To add to the member of tab:
+
+
+Access removed from Spidermail:
+
+
+Access added to Spidermail:
+
+
+Brokerfocus: - 
+Disable Account (if applicable):
+Remove from BF Group:
+Add to BF Group:
+Is the user an Owner of a BF group - (Check - https://atrium/files/9815/4453/2706/BF_Group_Owners_December_2018.pdf)
+If they are an Owner of a BF group send a PI to IAM Support requesting them to authorise a change of ownership to that group
+
+NOTE IF THE USER WILL BE MOVING TO CLIENT ACCOUNTS AND ADDED TO ANY OF:
+_Client Account Analysts, _Client Accounts Controls, _Client Accounts PMS, _Client Accounts Withdrawals
+
+they will need to be added to the group clientaccounts per the below
+
+sudo bf_addgroup.sh (type this and all following commands as they appear below)
+Press Enter
+Enter your first Brokerfocus password
+Press Enter
+Enter the username of the New User
+Press Enter
+
+IF THEY ARE MOVING OUT OF CLIENT ACCOUNTS, RUN:
+sudo bf_delgroup.sh
+
+RecApp:
+Disable Account (if applicable):
+Delete User Access (if applicable):
+Add Account (Create PI to Database team, seek additional Auth)
+
+Altus:
+Disable Account (if applicable):
+Create Account with correct Role access (State model user):
+
+Origo:
+Disable Account (if applicable):
+Create Account with correct Role access (State model user):
+
+Equifax:
+Disable Account (if applicable):
+Create Account:
+
+Business Optix:
+If access removal, change or addition is applicable one of the following need to be notified - Michael Gilding or Rebecca Packwood
+
+Mailboxes to remove:
+Get-Mailbox -ResultSize Unlimited | Get-MailboxPermission -User First.Last@hl.co.uk   -ErrorAction SilentlyContinue | FT -Autosize
+
+Mailboxes to add:
+
+
+SCCM groups to add to Laptop/PC:
+
+SCCM groups to remove from Laptop/PC:
+
+Other:
+
+Once prepped, put the transfer into Awaiting Change and set the target date for the date of the transfer (ensure the time is set to AM)

@@ -1,0 +1,13 @@
+Starter Processing:
+
+
+
+1) If a user is starting WFH add them to the Dist list _Off-Site Colleagues and if in the office add them to _On-site colleagues
+2) Create Mailbox (Run this command in Exchange Powershell 2016: Enable-RemoteMailbox -identity "Edward Metcalf" -remoteroutingaddress Edward.Metcalf@hargreaveslansdown.mail.onmicrosoft.com
+3) Add Shared Mailboxes and Send on Behalf of access if requested
+
+
+
+Do the below actions depending on manager's SNow form and what has been requested
+4) Distribution groups - Open up Exchange Online and add the user to the specified Distribution lists and any 'standard' lists eg. _First Floor, _Contractors
+5) Once the account has been set up, please add a comment that is 'visible to caller' so they can see its been set up as requested

@@ -1,0 +1,29 @@
+Starter - AD Processing Only
+
+
+
+
+
+New Starter Process - Mark as DONE when complete (In BOLD TYPE)
+https://confluence.hargreaveslansdown.co.uk/display/SERVD/Starter+Process
+Check the above PI's have been completed and raise the following as necessary:
+If this is an IT user that requires 'Privileged access' as per IT Access Policy, send auth to Head of IT Operations
+Raise REQ to Unix Support if a Service Desk starter and access to Sybase (Spidermail SSH) is required: https://confluence.hargreaveslansdown.co.uk/display/IO/Sybase+-+Servicedesk+user+accounts
+If user is an IT Starter, please check whether any additional REQ's need to be raised (eg if Unix starter, REQ to Unix)
+
+
+
+
+
+1)    Create AD account (ensure the username is eight characters long)
+                Username of account: 
+2)    If the user is a third party (Consultant/Contractor), please add "Third Party" into the Employee Type field within Attribute Editor within AD
+3)    Check Attribute Editor "extensionAttribute1" states the users user ID and not any other user ID
+4)    Add the telephone ext to Attribute Editor "extensionAttribute3" if applicable or clear this field if no telephone ext required
+5)    Check the Organisation Tab and update / change the Job Title / Department and Line Manager (Copy and Paste)
+6)    Add the Basic Access AD groups needed for the role (You can use this Powershell to obtain the list T:\IT LIBRARY\Infrastructure\Service Desk\Team Tools\Powershell Scripts\Get-MemberOf). List the AD groups added below:
+7)    Ensure the email address is populated into the AD account General tab field
+8)    Set the AD account to expire 2 weeks after the allotted start date, If a Contractor/Consultant add the contract end date
+9)    Create P and S drives and add modify permission to the S drive for the user
+10)    If IT user (Developer or IT Ops) add to 'GitLab IT Users
+11)    Check other system access
